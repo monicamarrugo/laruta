@@ -1,0 +1,76 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Info</title>
+    <link href="../Content/Bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../Content/Custom/sb-admin-2.css" rel="stylesheet" type="text/css" />
+    <link href="../Content/Fonts/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="../Content/datatable/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../Content/datatable/responsive.dataTables.css" rel="stylesheet" type="text/css" />
+    <script language="javascript" src="../js/jquery-1.7.2.min.js"></script>
+    <script language="javascript" src="../js/fancywebsocket.js"></script>
+
+</head>
+
+<body>
+
+    <div class="panel-body navheader">
+        <img id="imgLogoSmall" src="../Content/Custom/img/logo-small.png" />
+    </div>
+
+    <div class="col-lg-12">
+        <div class="alert-box alert-success" id="msjRequerido"></div>
+    </div>
+    <div style="margin-left: 10%; margin-right:10%; margin-top:3%; text-align:right">
+        <a class="btn btn-default" data-bind="click: logout">
+            <i class="fa fa-sign-out fa-fw"></i> Salir
+        </a>
+    </div>
+    <div style="min-height: 60%;">
+        <div class="panel panel-default panel-info">
+
+            <div class="panel-body" data-bind="html: infoRuta">
+
+            </div>
+
+        </div>
+    </div>
+
+
+    <nav class="navbar navbar-default navbar-fixed-bottom ">
+
+        <div id="divTool" class="container panel-body navfooter">
+            <a href="Inbox.html" type="button" class="btnOption">
+                <img src="../Content/Custom/img/icon-alerta.png" width="45px" height="60px" />
+            </a>
+
+            <a href="InfoAcudiente.html" type="button" class="btnOption">
+                <img src="../Content/Custom/img/icon-info-lg.png" width="46px" height="60px" />
+            </a>
+
+            <a href="MapaAcudiente.html" type="button" class="btnOption">
+                <img src="../Content/Custom/img/icon-mapa.png" width="37px" height="58px" />
+            </a>
+        </div>
+    </nav>
+
+    <!-- jQuery -->
+    <script src="../Scripts/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../Scripts/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="../Scripts/ko/Lib/knockout.js"></script>
+    <script src="../Scripts/ko/Lib/knockout.localStorage.js"></script>
+    <script src="../Scripts/ko/InfoAcudiente/infoAcudienteViewModel.js"></script>
+    <script src="../Scripts/ko/InfoAcudiente/mainInfoAcudiente.js"></script>
+    <script src="../Scripts/datatable/jquery.dataTables.min.js"></script>
+    <script src="../Scripts/datatable/dataTables.bootstrap.min.js"></script>
+    <script src="../Scripts/datatable/responsive/dataTables.responsive.js"></script>
+</body>
+
+</html>

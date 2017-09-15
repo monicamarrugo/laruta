@@ -1,0 +1,128 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Ingreso</title>
+    <link href="../Content/Bootstrap/bootstrap.min.css" rel="stylesheet" type="text/css" />
+    <link href="../Content/Custom/sb-admin-2.css" rel="stylesheet" type="text/css" />
+    <link href="../Content/Fonts/font-awesome.min.css" rel="stylesheet" type="text/css" />
+    <link href="../Content/datatable/dataTables.bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="../Content/datatable/responsive.dataTables.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+
+    <div class="panel-body navgradient backingreso">
+        <img id="imgLogo" src="../Content/Custom/img/logo.png" />
+        <div class="titlePage">Ingreso a La Ruta</div>
+    </div>
+    <div class="col-lg-12">
+        <div class="alert-box alert-success" id="msjRequerido"></div>
+    </div>
+    <div class="panel panel-default">
+        <div class="panel-body">
+            <table width="100%" class="table table-striped table-bordered table-hover" id="tblEstudents">
+                <thead>
+                    <tr>
+                        <th>Sube</th>
+                        <th>Nombres</th>
+                        <th>Identificación</th>
+                        <th>Apellidos</th>
+                        <th>Dirección</th>
+                        <th>Teléfono</th>
+                        <th>Observación</th>
+                        <th>Ingreso</th>
+                    </tr>
+                </thead>
+            </table>
+        </div>
+    </div>
+    <div class="modal fade" id="ModalConfirm" role="dialog">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <!-- Modal content-->
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                    <h4 class="modal-title">Observación</h4>
+                </div>
+                <div class="modal-body" id="texto">
+                    <div class="row">
+                        <div class="col-lg-6">
+                            <div class="form-group">
+                                <textarea class="form-control" rows="3" data-bind="value: observationText"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="btn btn-act" data-bind="click: Register">Registrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-bottom ">
+     
+            <div id="divTool" class="container panel-body navfooter">
+                <a href="Mapa.html" type="button" class="btnOption">
+                    <img src="../Content/Custom/img/icon-mapa.png" width="37px" height="58px" />
+                </a>
+
+                <a href="StudentsGetOut.html" type="button" class="btnOption">
+                    <img src="../Content/Custom/img/icon-salida.png" width="43px" height="59px" />
+                </a>
+
+                <a href="StudentsList.html" type="button" class="btnOption">
+                    <img src="../Content/Custom/img/icon-ingreso-lg.png" width="68px" height="60px" />
+                </a>
+
+                <a href="alerta.html" type="button" class="btnOption">
+                    <img src="../Content/Custom/img/icon-alerta.png" width="45px" height="60px" />
+                </a>
+
+                <a href="Info.html" type="button" class="btnOption">
+                    <img src="../Content/Custom/img/icon-info.png" width="30px" height="60px" />
+                </a>
+            </div>
+      
+    </nav>
+    <!--<div id="divTool" class="panel-body navfooter">
+        <a href="Mapa.html" type="button" class="btnOption">
+            <img src="../Content/Custom/img/icon-mapa.png" width="37px" height="58px" />
+        </a>
+
+        <a href="StudentsGetOut.html" type="button" class="btnOption">
+            <img src="../Content/Custom/img/icon-salida.png" width="43px" height="59px" />
+        </a>
+
+        <a href="StudentsList.html" type="button" class="btnOption">
+            <img src="../Content/Custom/img/icon-ingreso-lg.png" width="68px" height="60px" />
+        </a>
+
+        <a href="alerta.html" type="button" class="btnOption">
+            <img src="../Content/Custom/img/icon-alerta.png" width="45px" height="60px" />
+        </a>
+
+        <a href="Info.html" type="button" class="btnOption">
+            <img src="../Content/Custom/img/icon-info.png" width="30px" height="60px" />
+        </a>
+    </div>-->
+
+    <!-- jQuery -->
+    <script src="../Scripts/jquery/jquery.min.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../Scripts/bootstrap/js/bootstrap.min.js"></script>
+
+    <script src="../Scripts/ko/Lib/knockout.js"></script>
+
+    <script src="../Scripts/ko/EstudentsList/estudentListViewModel.js"></script>
+    <script src="../Scripts/ko/EstudentsList/mainEstudentsList.js"></script>
+    <script src="../Scripts/ko/Lib/knockout.localStorage.js"></script>
+    <script src="../Scripts/datatable/jquery.dataTables.min.js"></script>
+    <script src="../Scripts/datatable/dataTables.bootstrap.min.js"></script>
+    <script src="../Scripts/datatable/responsive/dataTables.responsive.js"></script>
+</body>

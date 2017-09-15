@@ -1,0 +1,44 @@
+body {
+  padding-top: 70px;
+}
+.navsiteruta{
+    background-color: #646464;
+    border-color: #646464;
+    min-height: 70px;
+}
+.navsiteruta img{
+  max-width: 100px;
+  height: auto;
+  padding: 10px;
+}
+.contentSite .panel-primary>.panel-heading {
+    color: #2E68B0;
+    background-color: ffffff;
+    border-color: #337ab7;
+}
+
+.contentSite .panel-footer {
+    background-color: #ffffff;
+}
+.contentSite a{
+    color: #2E68B0;
+}
+
+.contentSite .row {
+     margin-right: 0px; 
+    margin-left: 0px; 
+}
+
+.navbar-default .navbar-nav>li>a {
+    color: #ffffff;
+}
+.badge a {
+    color: #ffffff;
+    cursor: pointer;
+}
+.ulOption{
+    list-style: none;
+}
+.cmdRow{
+    cursor: pointer;
+}
